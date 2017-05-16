@@ -3,7 +3,7 @@ package com.bitguiders.bjt_01;
 public class Finalize {
 	
 	public void finalize(){
-		System.out.println("finalize called");
+		System.out.println("who called finalize..?");
 	}  
 	
 	public static void main(String[] args){  

@@ -7,7 +7,8 @@ public class ExceptionHandeling {
 		throw new InterruptedException();
 		} catch (InterruptedException e) {
 		System.out.print("-catch ");
-		return "catch ";
+		//System.exit(0); //program will exit immediately and finally will not execute
+		return "catch ";//this will not execute
 		}finally{
 		System.out.print ("-finally ");
 		return "finally ";

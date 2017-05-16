@@ -5,7 +5,7 @@ import java.util.StringJoiner;
 import java.util.stream.Collectors;
 import java.util.List;
 
-public class _StringJoiner {
+public class StringJoiner_ {
 
 	public static void join(){
 		String str = String.join("-", "872","000","00");

@@ -10,6 +10,12 @@ public class Literals {
 		System.out.println("120..? " + one + '2'+zero);
 
 		System.out.println("null..? \0 \\"+zero);
+		
+		Integer i1=2;//boked
+		Integer i2=2;//bokex
+		int i3 = i2;//unboxed
+		System.out.println(i1==i2);
+		System.out.println(i1==i3);
 	}
 
 }

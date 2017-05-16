@@ -1,7 +1,6 @@
-package com.bitguiders.bjt_01;
+package com.bitguiders.bjt_01._collection;
 
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Hashtable;
@@ -96,7 +95,7 @@ public class DataStructures {
 		list.add("c");
 		//map.add(null);
 		
-		//List list =  Collections.synchronizedCollection(synchronizedList);
+		//List<String> list2 =  (List) Collections.synchronizedCollection(list);
 		for(String key:list){
 			System.out.println(key);
 		}

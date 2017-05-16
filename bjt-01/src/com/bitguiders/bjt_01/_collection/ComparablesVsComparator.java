@@ -1,11 +1,11 @@
-package com.bitguiders.bjt_01;
+package com.bitguiders.bjt_01._collection;
 
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 
-public class Comparables {
+public class ComparablesVsComparator {
 
 	public static void main(String[] args) {
 		List<User> users = new ArrayList<User>();
