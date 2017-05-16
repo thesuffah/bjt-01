@@ -6,7 +6,9 @@ public  abstract class Abstract {
 		System.out.println("abstractMethod1");
 	}
 }
-class Run extends Abstract{
+ abstract class Abstract2 extends Abstract{}
+ 
+class Run extends Abstract2{
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
