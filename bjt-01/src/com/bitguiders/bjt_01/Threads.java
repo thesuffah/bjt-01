@@ -30,6 +30,7 @@ public strictfp class Threads extends Thread {
 			    //notify();//notify this waiting thread
 			    //notifyAll();//will notify all waiting threads
 				Thread.sleep(500);  //will not release lock
+				Thread.yield();//pause and allow other threads to execute
 			   }catch(InterruptedException  e){System.out.println(e);}  
 			  System.out.println(i);  
 			  }  
