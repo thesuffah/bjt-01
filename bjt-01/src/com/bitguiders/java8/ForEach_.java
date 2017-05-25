@@ -12,14 +12,14 @@ public class ForEach_ {
 		table.put("b","b2");
 		table.put("c","c3");
 		
-		before:
+		//before: java 8
 		for(String key:table.keySet()){
 			System.out.println("Before = "+key+","+table.get(key));
 		}
 		System.out.println();
-		after:
-		table.forEach((k,v)->System.out.println("After = "+k+","+v));
 		
+		//after: java 8
+		table.forEach((k,v)->System.out.println("After = "+k+","+v));
 	}
 	
 	public static void main(String arg[]){
