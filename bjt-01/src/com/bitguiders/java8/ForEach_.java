@@ -19,7 +19,7 @@ public class ForEach_ {
 		System.out.println();
 		
 		//after: java 8
-		table.forEach((k,v)->System.out.println("After2 = "+k+","+v));
+		table.forEach((k,v)->System.out.println("After = "+k+","+v));
 	}
 	
 	public static void main(String arg[]){

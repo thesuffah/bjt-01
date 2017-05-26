@@ -8,6 +8,8 @@ import java.util.List;
 import java.util.TreeMap;
 import java.util.TreeSet;
 
+import sun.misc.Queue;
+
 public class DataStructures {
 	
 	//neither null key, nor null values allowed, also its synchronized
@@ -101,14 +103,22 @@ public class DataStructures {
 		}
 	}
 	
+	public static void queue(){
+		Queue<String> q = new Queue<String>(); 
+		q.dump("Waqas");
+		q.dump("Sohail");
+		q.elements();
+	}
 	public static void main(String arg[]){
-		synchronizedList();
+		//synchronizedList();
 		
 		//hashtable();
 		//hashMap();
 		
 		//treeMap();
 		//treeSet();
-		hashSet();
+		//hashSet();
+		
+		queue();
 	}
 }
