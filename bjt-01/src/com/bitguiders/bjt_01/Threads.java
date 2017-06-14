@@ -49,6 +49,7 @@ public strictfp class Threads extends Thread {
         
         System.out.println("State Before running (t1) ="+t1.getState());
         t1.start();
+       // t1.start(); Illegal thread state exception
         t1.join();//t2,t3 will start once t1 will complete
         System.out.println("State After running (t1) ="+t1.getState());
         

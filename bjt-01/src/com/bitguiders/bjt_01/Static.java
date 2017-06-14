@@ -9,7 +9,7 @@ public class Static {
 	{
 		System.out.println("Non Static block: Who called me..?");
 	}
-	public static synchronized final void main(String... arg) {
+	public static synchronized void main(String... arg) {
 		
 		new Static();
 		test();

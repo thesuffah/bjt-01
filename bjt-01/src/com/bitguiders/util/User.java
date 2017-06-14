@@ -1,5 +1,10 @@
 package com.bitguiders.util;
 
+import org.apache.commons.lang3.builder.EqualsBuilder;
+import org.apache.commons.lang3.builder.HashCodeBuilder;
+import org.apache.commons.lang3.builder.ToStringBuilder;
+import org.apache.commons.lang3.builder.ToStringStyle;
+
 public class User {
 
 	private String userName;
@@ -27,7 +32,19 @@ public class User {
 		return "Welcome "+userName;
 	}
 	
-	public String toString(){
+	public String toString_(){
 		return userName+","+password;
 	}
+	public boolean equals(Object obj) {
+        return EqualsBuilder.reflectionEquals(this, obj);
+    }
+
+    public String toString() {
+        return ToStringBuilder.reflectionToString(this,
+            ToStringStyle.SHORT_PREFIX_STYLE);
+    }
+
+    public int hashCode() {
+        return HashCodeBuilder.reflectionHashCode(this);
+    }
 }

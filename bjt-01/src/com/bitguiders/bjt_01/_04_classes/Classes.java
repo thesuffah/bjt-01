@@ -5,7 +5,7 @@ class OuterClass{
 	int a=2;
 static	int b=2;
 	//Member inner Class, inside of class and outside of method :)
-	class InnerClass{
+	class  InnerClass{
 		public  InnerClass(){
 			System.out.println(" - "+this.getClass().getSimpleName()+" a= "+a);
 		}
