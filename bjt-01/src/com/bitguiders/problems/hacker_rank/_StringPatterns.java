@@ -1,4 +1,4 @@
-package com.bitguiders.problems;
+package com.bitguiders.problems.hacker_rank;
 
 import java.io.BufferedWriter;
 import java.io.FileWriter;

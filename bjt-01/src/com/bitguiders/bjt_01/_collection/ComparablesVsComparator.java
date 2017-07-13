@@ -32,7 +32,6 @@ class CustomComparator implements Comparator<User> {
 	public int compare(User u1, User u2) {
 		return -1*u1.getUserName().compareTo(u2.getUserName());
 	}
-	
 }
 
  class User implements Comparable<User> {

@@ -37,6 +37,7 @@ public class DataStructures {
 		map.put(null,"b");
 		map.put("c",null);
 		map.put(null,"c");
+		map.put("a","a3");
 		
 		for(String key:map.keySet()){
 			System.out.println(key+","+map.get(key));
@@ -113,12 +114,12 @@ public class DataStructures {
 		//synchronizedList();
 		
 		//hashtable();
-		//hashMap();
+		hashMap();
 		
 		//treeMap();
 		//treeSet();
 		//hashSet();
 		
-		queue();
+		//queue();
 	}
 }

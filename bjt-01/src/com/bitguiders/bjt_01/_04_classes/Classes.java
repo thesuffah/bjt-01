@@ -7,10 +7,12 @@ static	int b=2;
 	//Member inner Class, inside of class and outside of method :)
 	class  InnerClass{
 		public  InnerClass(){
+			
 			System.out.println(" - "+this.getClass().getSimpleName()+" a= "+a);
 		}
 	}
 	static class StaticInnerClass{
+		
 		public StaticInnerClass(){
 			System.out.println(" - "+this.getClass().getSimpleName()+" b= "+b);
 		}

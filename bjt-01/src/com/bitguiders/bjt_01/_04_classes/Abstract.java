@@ -1,6 +1,8 @@
 package com.bitguiders.bjt_01._04_classes;
 
 public  abstract class Abstract {
+	
+	public static enum abc{};
 	public abstract void abstractMethod();
 	private void abstractMethod1(){
 		System.out.println("abstractMethod1");
