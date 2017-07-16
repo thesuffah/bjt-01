@@ -4,7 +4,7 @@
   <class id="1" language="java" name="com.bitguiders.design_patterns.observer_pattern.Observer" project="bjt-01" 
     file="/bjt-01/src/com/bitguiders/design_patterns/observer_pattern/Observer.java" binary="false" 
     corner="BOTTOM_RIGHT">    
-    <position height="99" width="214" x="92" y="221"/>    
+    <position height="-1" width="-1" x="541" y="317"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -14,7 +14,7 @@
   <class id="2" language="java" name="com.bitguiders.design_patterns.observer_pattern.AObserver" project="bjt-01" 
     file="/bjt-01/src/com/bitguiders/design_patterns/observer_pattern/AObserver.java" binary="false" 
     corner="BOTTOM_RIGHT">    
-    <position height="99" width="214" x="-162" y="360"/>    
+    <position height="-1" width="-1" x="287" y="456"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -24,7 +24,7 @@
   <class id="3" language="java" name="com.bitguiders.design_patterns.observer_pattern.BObserver" project="bjt-01" 
     file="/bjt-01/src/com/bitguiders/design_patterns/observer_pattern/BObserver.java" binary="false" 
     corner="BOTTOM_RIGHT">    
-    <position height="99" width="214" x="92" y="360"/>    
+    <position height="-1" width="-1" x="541" y="456"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -34,7 +34,7 @@
   <class id="4" language="java" name="com.bitguiders.design_patterns.observer_pattern.CObserver" project="bjt-01" 
     file="/bjt-01/src/com/bitguiders/design_patterns/observer_pattern/CObserver.java" binary="false" 
     corner="BOTTOM_RIGHT">    
-    <position height="99" width="214" x="346" y="360"/>    
+    <position height="-1" width="-1" x="795" y="456"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -43,7 +43,7 @@
   </class>  
   <class id="5" language="java" name="com.bitguiders.design_patterns.observer_pattern.Subject" project="bjt-01" 
     file="/bjt-01/src/com/bitguiders/design_patterns/observer_pattern/Subject.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="171" width="214" x="92" y="10"/>    
+    <position height="-1" width="-1" x="544" y="107"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -61,27 +61,31 @@
   <association id="8">    
     <end type="SOURCE" refId="5" navigable="false">      
       <attribute id="9" name="observers">        
-        <position height="18" width="58" x="105" y="183"/>      
+        <position height="18" width="58" x="447" y="230"/>      
       </attribute>      
-      <multiplicity id="10" minimum="0" maximum="2147483647"/>    
+      <multiplicity id="10" minimum="0" maximum="2147483647">        
+        <position height="0" width="0" x="342" y="47"/>      
+      </multiplicity>    
     </end>    
     <end type="TARGET" refId="1" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <association id="11">    
+  <generalization id="11">    
+    <end type="SOURCE" refId="3"/>    
+    <end type="TARGET" refId="1"/>  
+  </generalization>  
+  <association id="12">    
     <end type="SOURCE" refId="1" navigable="false">      
-      <attribute id="12" name="subject">        
-        <position height="18" width="45" x="125" y="201"/>      
+      <attribute id="13" name="subject">        
+        <position height="18" width="45" x="470" y="213"/>      
       </attribute>      
-      <multiplicity id="13" minimum="0" maximum="1"/>    
+      <multiplicity id="14" minimum="0" maximum="1">        
+        <position height="0" width="0" x="345" y="12"/>      
+      </multiplicity>    
     </end>    
     <end type="TARGET" refId="5" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <generalization id="14">    
-    <end type="SOURCE" refId="3"/>    
-    <end type="TARGET" refId="1"/>  
-  </generalization>  
   <classifier-display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
     sort-features="false" accessors="true" visibility="true">    
     <attributes public="true" package="true" protected="true" private="true" static="true"/>    

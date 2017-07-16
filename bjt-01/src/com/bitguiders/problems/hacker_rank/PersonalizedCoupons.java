@@ -24,10 +24,12 @@ public class PersonalizedCoupons {
 			}
 		}
 		
+		
 		//Step-2: Sort the coupons by the percentage off (highest first).
 		Collections.sort(filteredCupons,(m1,m2)-> ((Float) m2.get("couponAmount")).compareTo((Float) (m1.get("couponAmount"))));
 		
 		//Step-3: Only keep the first 10.
+		if(filteredCupons.size()>10)
 		filteredCupons = filteredCupons.subList(0,2);
 		
 		filteredCupons.forEach(m->{
