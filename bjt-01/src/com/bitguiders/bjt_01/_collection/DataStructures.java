@@ -4,11 +4,13 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Hashtable;
+import java.util.LinkedList;
 import java.util.List;
+import java.util.Queue;
+import java.util.Stack;
 import java.util.TreeMap;
 import java.util.TreeSet;
 
-import sun.misc.Queue;
 
 public class DataStructures {
 	
@@ -104,22 +106,34 @@ public class DataStructures {
 		}
 	}
 	
+	//FIFO: First in first out
 	public static void queue(){
-		Queue<String> q = new Queue<String>(); 
-		q.dump("Waqas");
-		q.dump("Sohail");
-		q.elements();
+		Queue<String> q = new LinkedList<>();
+		q.add("Waqas");
+		q.add("Sohail");
+		q.remove();//remove first item
+		System.out.println(q.peek());//
+		
+
+	}
+	public static void stack(){
+		Stack<String> s = new Stack<String>();
+		s.push("Waqas");
+		s.push("Sohail");
+		s.push("Wajid");
+		System.out.println(s.pop());
 	}
 	public static void main(String arg[]){
 		//synchronizedList();
 		
 		//hashtable();
-		hashMap();
+		//hashMap();
 		
 		//treeMap();
 		//treeSet();
 		//hashSet();
 		
-		//queue();
+		queue();
+		//stack();
 	}
 }
