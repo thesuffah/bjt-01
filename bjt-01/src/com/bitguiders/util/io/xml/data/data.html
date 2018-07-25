@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Highmark: Your Health Care Partner</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta name="description" content="Highmark is a health and wellness organization located in Pittsburgh and operates health insurance plans in Pennsylvania, Delaware and West Virginia." />
+	<meta name="keywords" content="Highmark, Highmark Inc., Highmark health insurance, health care" />
+    
+	
+	<!-- CSS -->
+	<link rel="stylesheet" href="/hmk2/css/bootstrap.css" />
+	<link rel="stylesheet" href="/hmk2/css/bootstrap_ms.css" />
+	<link rel="stylesheet" href="/hmk2/css/styles.css" />
+    <link rel="stylesheet" href="/hmk2/css/nav.css" />
+	
+	<!-- jQuery -->
+	<script src="/hmk2/scripts/jquery/jquery-1.7.2.min.js" type="text/javascript"></script>
+    <script src="/hmk2/scripts/jquery/jquery-cookie.js"></script>
+	
+	<!-- Bootstrap (must come AFTER jquery.js -->
+	<script src="/hmk2/scripts/bootstrap.js" type="text/javascript"></script>
+	<script src="/hmk2/scripts/javascript.js" type="text/javascript"></script>
+	
+	<!-- HTML5 Shim and Respond.js: IE8 support of HTML5 elements and media queries -->
+	<!--[if lt IE 9]>
+	  <script src="/hmk2/scripts/html5shiv.js"></script>
+      <script src="/hmk2/scripts/respond.min.js"></script>
+	<![endif]-->
+	<script type="text/javascript">
+		var displayAlert = "no";  //do we show the alert notice?
+		$(document).ready(function() {
+			$("#promoCarousel").carousel({
+         		interval: 8000,
+         		pause: "hover"
+     		});
+			 // Enable carousel control
+			$(".left").click(function(){
+				$("#promoCarousel").carousel('prev');
+			 });
+			 $(".right").click(function(){
+				$("#promoCarousel").carousel('next');
+			 });
+		});
+    </script> 
+</head>
+<body id="home" class="fullLegal">
+
+<script language="JavaScript" type="text/javascript">
+<!--
+	checkAlertStatus();
+// -->
+</script>
+
+<!-- BEGIN HEADER INCLUDE -->
+<div id="skiptocontent">
+	<a href="#content">Skip to main content</a>
+</div>
+	
+<div class="topbar">
+<div class="container">
+<ul class="nav nav-pills pull-right">
+
+	<li class="dropdown">
+		<a href="#" data-toggle="dropdown" class="dropdown-toggle">Select Color Contrast<b class="caret"></b></a>
+		<ul class="dropdown-menu colorSwitcher">
+			<li id="default"><a href="javascript:;" onClick="javascript:changeColors('default');return false;">Default | Reset to Default</a></li>
+			<li id="highContrast1"><a href="javascript:;" onClick="javascript:changeColors('highContrast1');return false;">High Contrast 1</a></li>	
+			<li id="highContrast2"><a href="javascript:;" onClick="javascript:changeColors('highContrast2');return false;">High Contrast 2</a></li>
+		</ul>
+	</li>
+
+	<li class="dropdown">
+		<a href="#" data-toggle="dropdown" class="dropdown-toggle">Select Language<b class="caret"></b></a>
+		<ul class="dropdown-menu">
+			<li><a mporgnav href="https://espanol.highmark.com" onclick="return switchLanguage('es'); function switchLanguage(lang) { MP.SrcUrl=unescape('mp_js_orgin_url'); MP.UrlLang='mp_js_current_lang'; MP.init(); MP.switchLanguage(MP.UrlLang==lang?'en':lang); return false;}" lang="es">Espanol</a></li>
+
+			<li><a href="/hmk2/lep/italian.shtml" lang="it">Italiano</a></li>
+			<li><a href="/hmk2/lep/russian.shtml" lang="ru">Русский язык</a></li>
+			<li><a href="/hmk2/lep/vietnamese.shtml" lang="vi">Tiếng Việt</a></li>
+			<li><a href="/hmk2/lep/chinese.shtml" lang="zh">中文</a></li>
+<li>        
+<a onclick="ga('send', { 'hitType': 'pageview', 'page': '/hmk2/pdf/languagesother.pdf', 'title': 'Other' });" href="/hmk2/pdf/languagesother.pdf" target="_blank">Other</a> </li>
+		</ul>
+	</li>
+	
+	<li class="dropdown">
+		<a href="#" data-toggle="dropdown" class="dropdown-toggle" aria-label="Change text size"><span class="small">A</span>A<b class="caret"></b></a>
+		<ul class="dropdown-menu resizer">
+			<li id="smaller"><a href="#" class="smaller">Smaller</a></li>
+			<li id="regular"><a href="#" class="regular">Regular</a></li>
+			<li id="larger"><a href="#" class="larger">Larger</a></li>
+		</ul>
+	</li>
+
+	<li class="dropdown needhelp">
+		<a href="#" data-toggle="dropdown" class="dropdown-toggle">Need Help?<b class="caret"></b></a>
+		<ul class="dropdown-menu">
+			<li><a href="/hmk2/contact.shtml">Contact Us</a></li>
+		</ul>
+	</li>
+	
+</ul><!-- end ul.nav-pills -->
+</div><!-- end container -->
+</div><!-- end topbar -->
+	
+	
+<!-- SEARCH URLS 
+PROD - https://secure.highmark.com/cwasch/results-hmk.jsp
+-->
+	
+<div class="container">
+	
+<div class="row">
+<div class="col-sm-7 col-md-9">
+<a class="hmLogo" href="/hmk2/index.shtml"><img src="/hmk2/images/highmarkLogo.png" alt="Highmark Home" /></a>
+</div>
+<div class="col-sm-5 col-md-3">
+<form role="form" class="clearfix" name="siteSearch" id="siteSearch" action="https://secure.highmark.com/cwasch/CWAParaSearch" method="GET">
+<input type="hidden" name="Action" value="Search">
+<input type="hidden" name="Collection" value="corphmcom">
+<input type="hidden" name="ResultStart" value="1">
+<input type="hidden" name="QueryMode" value="Internet">
+<input type="hidden" name="ResultMaxDocs" value="-1">
+<input type="hidden" name="SiteName" value="results-hmk.jsp" />
+
+<div class="row">
+<div class="col-lg-12">
+<div class="input-group">
+<label class="sr-only" for="QueryText">Search Highmark.com</label>	
+<input type="text" name="QueryText" id="QueryText" class="form-control input-sm" placeholder="Search Highmark.com" />
+<span class="input-group-btn">
+<button class="btn btn-primary input-sm" aria-label="Search" type="submit"><span class="glyphicon glyphicon-search"></span></button>
+</span>
+</div><!-- /input-group -->
+</div><!-- /.col -->
+</div><!-- /.row -->
+</form>
+</div>
+</div><!-- end .row -->
+
+<div class="clearfix"></div>
+
+<div class="navbar navbar-default yamm" role="navigation">
+<div class="navbar-header">
+<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+<span class="sr-only">Toggle navigation</span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+</button>
+</div>
+
+<!-- Collect the nav links, forms, and other content for toggling -->
+<div class="collapse navbar-collapse">
+<ul class="nav navbar-nav">
+<li class="home"><a href="/hmk2/index.shtml" id="homeTab" aria-label="Home"><span class="toggle-hidden">Home</span>&nbsp;</a></li>
+<li class="dropdown yamm-fw">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown" id="aboutTab">About Us</a>
+<ul class="dropdown-menu">
+<li>
+<div class="yamm-content about">
+<div class="row no-gutter">
+<div class="col-md-12">  
+<div class="col1 pull-left">
+<div class="row1"></div>
+<div class="row2 text-right"><img src="/hmk2/images/header/navbar-dropdown-corner.png" alt="" /></div>
+<div class="row3 bg"></div>
+</div>
+<div class="col2 pull-left">
+<div class="row1"><img src="/hmk2/images/header/navbar-dropdown-pointer.png" alt="" class="pointer" /></div>
+<div class="row2 gray"></div>
+<div class="row3 gray">  
+<div class="indent">  
+<p class="hidden-xs hidden-ms">Learn more about Highmark and our affiliates and diversified business:</p>
+<ul><li><a href="/hmk2/about/vision/index.shtml">Mission, Vision &amp; Values</a></li>
+<li><a href="/hmk2/about/corpprofile/index.shtml">Corporate Profile</a></li>
+<li><a href="http://careers.highmarkhealth.org/" target="_blank">Careers</a></li>
+<li><a href="/hmk2/about/ourBusinesses.shtml">Our Businesses</a></li>
+<li><a href="https://www.highmarkhealth.org/annualreport2017/index.shtml" target="_blank">Annual Report</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="col3 pull-left">
+<div class="row1"></div>
+<div class="row2"></div>
+<div class="row3 bg"> 
+<div class="bigImg">
+<div class="indent">  
+   
+<h2>About Us</h2>
+<p>Highmark Inc. is a national, diversified health care partner serving members through its businesses in health insurance, dental insurance, vision care and reinsurance. Our mission is to make high-quality health care readily available, easily understandable and truly affordable in the communities we serve.</p>
+
+<!-- <p><a href="" class="rightArrow">Get a summary here</a></p> -->
+
+</div>
+</div>
+</div>
+</div>
+<div class="clearFloat"></div>
+</div>
+</div>
+</div>
+</li>
+</ul>
+</li>
+<li class="dropdown yamm-fw">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown" id="newsroomTab">Newsroom</a>
+<ul class="dropdown-menu">
+<li>
+<div class="yamm-content newsroom">
+<div class="row no-gutter">
+<div class="col-md-12">  
+<div class="col1 pull-left">
+<div class="row1"></div>
+<div class="row2 text-right"><img src="/hmk2/images/header/navbar-dropdown-corner.png" alt="" />
+</div>
+<div class="row3 bg"></div>
+</div>
+<div class="col2 pull-left">
+<div class="row1"><img src="/hmk2/images/header/navbar-dropdown-pointer.png" alt="" class="pointer" /></div>
+<div class="row2 gray"></div>
+<div class="row3 gray">  
+<div class="indent">  
+<p class="hidden-xs hidden-ms">View current news releases, browse our press kits, and learn more about Highmark:</p>
+
+<ul>
+<li><a href="/hmk2/newsroom/2018/index.shtml">Press Releases</a></li>
+<li><a href="/hmk2/newsroom/socialMedia.shtml">Social Media</a></li>
+<li><a href="/hmk2/newsroom/snapshot.shtml">Corporate Snapshot</a></li>
+<li><a href="/hmk2/newsroom/weeklyCapitolHillReport/index.shtml">Weekly Capitol Hill Report</a></li>
+
+</ul>
+</div>
+</div>
+</div>
+<div class="col3 pull-left">
+<div class="row1"></div>
+<div class="row2"></div>
+<div class="row3 bg"> 
+<div class="bigImg">
+<div class="indent">     
+<h2>Newsroom</h2>
+<p>Guided by a corporate mission to make high-quality health care readily available, easily understandable and affordable, Highmark Inc. has taken a leadership role in providing innovative products, programs and services for our members, providers and the communities we serve.</p>
+<!-- <p><a href="" class="rightArrow">Get a summary here</a></p> -->
+</div>
+</div>
+</div>
+</div>
+<div class="clearFloat"></div>
+</div>
+</div>
+</div>
+</li>
+</ul>
+</li>
+<li class="dropdown yamm-fw">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown" id="responsibilityTab">Corporate Responsibility</a>
+<ul class="dropdown-menu">
+<li>
+<div class="yamm-content responsibility">
+<div class="row no-gutter">
+<div class="col-md-12">  
+<div class="col1 pull-left">
+<div class="row1"></div>
+<div class="row2 text-right"><img src="/hmk2/images/header/navbar-dropdown-corner.png" alt="" /></div>
+<div class="row3 bg"></div>
+</div>
+<div class="col2 pull-left">
+<div class="row1"><img src="/hmk2/images/header/navbar-dropdown-pointer.png" alt="" class="pointer" /></div>
+<div class="row2 gray"></div>
+<div class="row3 gray">  
+<div class="indent">  
+<p class="hidden-xs hidden-ms">Learn more about our corporate commitment to communities:</p>
+<ul>
+<li><a href="/hmk2/responsibility/commitment.shtml">Our Commitment</a></li>
+<li><a href="/hmk2/responsibility/giving/index.shtml">Corporate Giving</a></li>
+<li><a href="/hmk2/responsibility/involvement/index.shtml">Community Involvement</a></li>
+<li><a href="/hmk2/responsibility/seg/index.shtml">Sustainable, Eco-Friendly &amp; Green</a></li>
+<li><a href="/hmk2/responsibility/diversity/index.shtml">Diversity &amp; Inclusion</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="col3 pull-left">
+<div class="row1"></div>
+<div class="row2"></div>
+<div class="row3 bg"> 
+<div class="bigImg">
+<div class="indent">     
+
+<h2>Corporate Responsibility</h2>
+
+<p>For nearly 75 years, Highmark Inc. has had a longstanding commitment to the communities where we do business. We take our responsibilities related to diversity, sustainability, disparities and corporate leadership seriously because they directly link to the values of our company.</p>
+
+<!-- <p><a href="" class="rightArrow">Get a summary here</a></p> -->
+
+</div>
+</div>
+</div>
+</div>
+<div class="clearFloat"></div>
+</div>
+</div>
+</div>
+</li>
+</ul>
+</li>
+</ul>
+
+<!-- Start a new UL here so that we can float-right the Blues' item -->
+<ul class="nav navbar-nav" id="bluesItem">
+<li class="dropdown yamm-fw blues">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown" id="bluesTab">CONSUMERS / MEMBERS / PROVIDERS</a>
+<ul class="dropdown-menu">
+<li>
+<div class="yamm-content blues">
+					
+<div class="row no-gutter hidden-xs hidden-ms">
+<div class="col-md-12">
+<div class="row1">
+<div class="col1"><img src="/hmk2/images/clearpix.gif" width="1" alt=""/></div>
+<div class="col2"><img src="/hmk2/images/header/navbar-dropdown-pointer.png" alt="" class="pointer" /></div>
+<div class="col3"><img src="/hmk2/images/clearpix.gif" width="1" alt=""/></div>
+</div>
+<div class="row2">
+<div class="col1"><img src="/hmk2/images/header/navbar-dropdown-corner.png" alt="" /></div>
+<div class="col2 gray"><img src="/hmk2/images/clearpix.gif" width="1" alt=""/></div>
+<div class="col3"><img src="/hmk2/images/clearpix.gif" width="1" alt=""/></div>
+</div>
+</div>
+</div><!-- end row -->
+
+<div class="row bg no-gutter">
+<div class="col-md-12">
+<div class="row3">
+<div class="col1"><img src="/hmk2/images/clearpix.gif" width="1" alt=""/></div>
+<div class="col2 flag"></div>
+<div class="col3"><img src="/hmk2/images/clearpix.gif" width="1" alt=""/></div>
+</div>
+<div class="row4">
+<div class="indent">
+<div class="row">
+								
+<div class="col-xs-12 col-ms-12 col-sm-4 col-md-4 col-lg-4"> 
+<div class="box">
+<h2>FOR CONSUMERS</h2>
+<p class="hidden-xs hidden-ms hidden-sm">Discover a better health care experience:</p>
+<ul>
+<li><a href="http://discoverhighmark.com/individuals-families" target="_blank">You buy your own insurance for yourself and/or your family</a></li>
+<li><a href="http://discoverhighmark.com/employer" target="_blank">Your employer provides your health coverage</a></li>
+<li><a href="https://shop.highmark.com/medicare/#!/home" target="_blank">You are Medicare-eligible and buy your own coverage</a></li>
+<li><a href="http://discoverhighmark.com/employer" target="_blank">You manage plans for a small or large business</a></li>
+<li><a href="https://producer.highmark.com" target="_blank">You are a producer</a></li>
+</ul>
+</div><!-- end box -->
+</div>
+									
+<div class="col-xs-12 col-ms-12 col-sm-4 col-md-4 col-lg-4">
+<div class="box">
+
+<h2>FOR MEMBERS</h2>
+<p class="hidden-xs hidden-ms hidden-sm">Check your member ID card to see which plan serves you.</p>
+<ul>
+<li><a href="https://www.highmarkbcbs.com" target="_blank">Highmark Blue Cross Blue Shield</a></li>
+<li><a href="https://www.highmarkblueshield.com" target="_blank">Highmark Blue Shield</a></li>												
+<li><a href="https://www.highmarkbcbswv.com" target="_blank">Highmark Blue Cross Blue Shield West Virginia</a></li>	
+<li><a href="https://www.highmarkbcbsde.com" target="_blank">Highmark Blue Cross Blue Shield Delaware</a></li>
+</ul>
+</div><!-- end box -->
+</div>
+									
+<div class="col-xs-12 col-ms-12 col-sm-4 col-md-4 col-lg-4">
+<div class="box norule">
+<h2>FOR PROVIDERS</h2>
+<p>Provider Resource Center:</p>
+<ul>
+<li><a href="https://prc.highmark.com/rscprc/hbcbs/pub" target="_blank">Highmark Blue Cross Blue Shield</a></li>
+<li><a href="https://prc.highmark.com/rscprc/hbs/pub" target="_blank">Highmark Blue Shield</a></li>												
+<li><a href="https://prc.highmark.com/rscprc/hwvbcbs/pub" target="_blank">Highmark Blue Cross Blue Shield West Virginia</a></li>	
+<li><a href="https://prc.highmark.com/rscprc/hdebcbs/pub" target="_blank">Highmark Blue Cross Blue Shield Delaware</a></li>
+</ul>
+</div><!-- end box -->
+</div>
+									
+</div><!-- end row -->
+</div><!-- end indent -->
+</div><!-- end row4 -->
+</div><!-- end col -->
+</div><!-- end row -->
+</div><!-- end yamm-content -->
+</li>
+</ul>
+</li>
+</ul>
+</div><!-- end .navbar-collapse -->
+</div><!-- end navbar -->
+<div class="row">
+<div class="col-md-12">            
+<div class="body-text">
+<!-- end header include -->
+
+<h1>
+YOUR HEALTH CARE PARTNER</h1>
+<div class="row">
+<div class="col-md-12">
+<a name="content"></a>
+<p class="larger">For some 75 years, we have helped build healthier, stronger communities. Let us be your partner in good health &#151; at your doctor's office, at your workplace, at home and in your community.</p>
+
+</div><!-- end col -->
+</div><!-- end row -->
+
+<div class="row">
+<div id="promoContainer" class="col-xs-12 col-ms-12 col-sm-12 col-md-9 col-lg-7">
+<div id="promoCarousel" class="carousel slide">
+
+<div class="carouselNavbar">
+<!-- Controls -->
+<a class="left carousel-control" href="#promoCarousel" role="button" data-slide="prev">
+<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+<span class="chevronText">PREVIOUS</span>
+</a>
+<a class="right carousel-control" href="#promoCarousel" role="button" data-slide="next">
+<span class="chevronText">NEXT</span>
+<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+</a>
+  
+<!-- Carousel indicators -->
+<ol class="carousel-indicators">
+<li data-target="#promoCarousel" data-slide-to="0" class="active"></li>
+<li data-target="#promoCarousel" data-slide-to="1"></li>
+<li data-target="#promoCarousel" data-slide-to="2"></li>
+<li data-target="#promoCarousel" data-slide-to="3"></li>
+<li data-target="#promoCarousel" data-slide-to="4"></li>
+
+</ol>		
+		
+</div><!-- end carouselNavbar -->
+
+<!-- Carousel items -->
+<div class="carousel-inner">
+
+<div class="item active"><img src="images/home/carousel/livingProof3.jpg" alt="">
+  <div class="carousel-caption">
+  <h2>What is Living Proof?</h2> 
+<p>Health care stories provide living proof of how we make a difference in the lives of our members.</p>
+<p><a href="/hmk2/livingproof/index.shtml" target="_blank" class="arrowRight">Get more details</a></p>
+</div>
+</div>
+
+<div class="item"><img src="images/home/carousel/travel.jpg" alt="">
+<div class="carousel-caption">
+<h2>You can enjoy vacation while maintaining a healthy lifestyle. </h2> 
+<p>Planning ahead will help you maintain healthy eating and workout patterns while you're away.  </p>
+<p><a href="/hmk2/promo/travel.shtml" class="arrowRight">Get more details</a></p>
+</strong>
+</div>
+</div>
+
+<div class="item">
+<img src="images/home/carousel/drMatch.jpg" alt="">
+<div class="carousel-caption">
+<h2>Looking for a new doctor? Highmark can help.</h2> 
+<p>Highmark recently introduced "Doctor Match," a digital experience for finding the right doctor.</p>
+<p><a href="https://www.drmatchquiz.com" target="_blank" class="arrowRight">Get more details</a></p>
+</div>
+</div>
+
+<div class="item">
+<img src="images/home/carousel/memberLane.jpg" alt="">
+<div class="carousel-caption">
+<h2>Attending a concert at Hershey Stadium this year? Avoid the long lines.</h2> 
+<p>Highmark members can get quick entry to concerts with the Highmark Blue Shield Member Express Lane.</p>
+<p><a href="/hmk2/promo/memberLane.shtml" class="arrowRight">Get more details</a></p>
+</div>
+</div>
+
+
+
+<div class="item">
+<img src="images/home/carousel/sunScreen.jpg" alt="">
+<div class="carousel-caption">
+<h2>Enjoy the summer to its fullest with full-fledged skin protection.</h2> 
+<p>Even a little bit of exposure to the sun can bring increased risks.</p>
+<p><a href="https://blog.highmarkhealth.org/ask-a-doc-saving-your-skin/" target="_blank" class="arrowRight">Get more details</a></p>
+</div>
+</div>
+
+
+
+
+
+</div><!-- end carousel-inner -->
+</div><!-- end #promoCarousel -->
+</div><!-- end #promoContainer -->
+
+<div id="adsContainer" class="col-xs-12 col-ms-12 col-sm-12 col-md-3 col-lg-3">
+<div class="row">
+
+<div class="col-xs-12 col-ms-6 col-sm-4 col-md-12 col-lg-10">
+<div class="thumbnail image">
+<div class="caption">
+<a href="http://pub.s1.exacttarget.com/kqla13lyj1w" target="_blank"> <img src="/hmk2/images/home/running101.jpg" alt="Running 101" class="img-responsive" /></a>
+</div>
+</div>
+</div>
+
+<div class="col-xs-12 col-ms-6 col-sm-4 col-md-12 col-lg-10">
+<div class="thumbnail image">
+<div class="caption">
+<a href="/hmk2/promo/memberLane.shtml"><img src="/hmk2/images/home/concertSeries.jpg" alt="Hershey Park Stadium"class="img-responsive" /></a>
+</div>
+</div>
+</div>
+
+<div class="col-xs-12 col-ms-6 col-sm-4 col-md-12 col-lg-10">
+<div class="thumbnail image">
+<div class="caption">
+<a href="https://www.drmatchquiz.com
+" target="_blank"><img src="/hmk2/images/home/drMatch.jpg" alt="Dr. Match" class="img-responsive" /></a>
+</div>
+</div>
+</div>
+
+
+
+
+
+
+
+
+</div><!-- end row -->	
+</div><!-- end adsContainer -->
+</div><!-- end row -->
+<p>&nbsp;</p><p>&nbsp;</p>
+
+<!-- BEGIN FOOTER INCLUDE -->
+                </div><!-- end div.body-text -->
+            </div><!-- end div.col-md-12 -->  
+        </div><!-- end div.row -->
+    </div><!-- end container -->
+    
+<div class="footer">
+<div class="container">
+<div class="row">
+			
+<div class="col-xs-12 col-ms-12 col-sm-5 col-md-5 col-lg-4">
+<a class="hmLogo" href="/hmk2/index.shtml"><img src="/hmk2/images/highmarkLogoWhite.png" alt="Highmark Home" /></a><br />
+
+<div class="row social hidden-print">			
+<div class="col-xs-12 col-sm-12 col-md-12">
+
+<a href="https://www.facebook.com/Highmark?rf=108106425883573" target="_blank" title="Like us on Facebook" data-toggle="popover" data-content="Click to get updates on Highmark on Facebook"><img src="/hmk2/images/social/facebook.png" alt="Facebook" border="0" align="baseline" class="icon" id="facebook" /></a>
+
+<a href="https://twitter.com/highmark" target="_blank" title="Follow us on Twitter" data-toggle="popover" data-content="Click to get updates on Highmark on Twitter"><img src="/hmk2/images/social/twitter.png" alt="Twitter" border="0" align="baseline" class="icon" id="twitter" /></a>
+
+									<a href="http://www.youtube.com/highmarkhealthy" target="_blank" title="Subscribe to our YouTube channel" data-toggle="popover"><img src="/hmk2/images/social/youtube.png" alt="YouTube" border="0" align="baseline" class="icon" id="youtube" /></a>
+
+<a href="http://www.pinterest.com/highmark" target="_blank" title="Follow us on Pinterest" data-toggle="popover" data-content="Click to get updates on Highmark on Pinterest"><img src="/hmk2/images/social/pinterest.png" alt="Pinterest" border="0" align="baseline" class="icon" id="pinterest" /></a>
+
+<a href="http://instagram.com/highmark" target="_blank" title="Check us out on Instagram" data-toggle="popover" data-content="Click to get updates on Highmark on Instagram"><img src="/hmk2/images/social/instagram.png" alt="Instagram"  border="0" align="baseline" class="icon" id="instagram" /></a>
+
+<a href="https://www.linkedin.com/company/highmark" target="_blank" title="Connect with us on LinkedIn" data-content="Click to get updates on Highmark on LinkedIn"><img src="/hmk2/images/social/linkedin.png" alt="LinkedIn" border="0" align="baseline" class="icon" id="linkedin" /></a>							
+
+<a href="https://blog.highmarkhealth.org/" target="_blank" title="Visit the Highmark Blog" data-content="Click to get updates on Highmark on our blog"><img src="/hmk2/images/social/blog.png" alt="Highmark Blog" border="0" align="baseline" class="icon" id="blog" /></a>
+
+<a href="http://www.flickr.com/photos/68130792@N04/" target="_blank" title="Check us out on Flickr" data-toggle="popover" data-content="Click to get updates on Highmark on Flickr"><img src="/hmk2/images/social/flickr.png" alt="Flickr"  border="0" align="baseline" class="icon" id="flickr" /></a>
+
+</div><!-- end col -->
+</div><!-- end row -->
+</div><!-- end col -->
+            		
+<div class="col-xs-6 col-ms-4 col-sm-2 col-md-2 col-lg-2 divider hidden-print">
+
+<p><a href="https://www.highmarkonhealthreform.com" target="_blank">Health Care Reform</a><br />
+<a href="/hmk2/publicPolicy.shtml">Public Policy</a><br />
+<a href="/hmk2/procurement/index.shtml">Procurement</a><br />
+<a href="https://www.highmark.com/edi/index.shtml" target="_blank">Electronic Data Interchange</a><br />
+<a href="/hmk2/fraud/index.shtml">Fraud Prevention</a><br />
+<a href="/hmk2/hipaa/index.shtml">HIPAA</a><br />
+<a href="/hmk2/privacy.shtml">Privacy</a><br />
+<a href="/hmk2/gdpr.shtml">GDPR</a></p>
+</div>            		
+
+<div class="col-xs-6 col-ms-4 col-sm-2 col-md-2 col-lg-2 divider hidden-print">
+<p>
+<a href="https://www.highmarkhealth.org/hmk/notifications.shtml" target="_blank"><strong>NOTIFICATIONS & ALERTS</strong></a><br />&nbsp;<br />
+<a href="https://www.highmarkhealth.org/hmk/security/index.shtml" target="_blank">Security</a><br />
+<a href="/hmk2/terms.shtml">Terms of Service</a><br />
+<a href="/hmk2/texting.shtml">SMS Texting</a><br />
+<a href="/hmk2/contact.shtml">Contact Us</a><br />
+<a href="/hmk2/help.shtml">Help</a>
+<br />&nbsp;<br />
+ </p>
+</div>            		
+<div class="col-xs-12 col-ms-4 col-sm-3 col-md-3 col-lg-3 divider hidden-print">
+<p><a href="http://discoverhighmark.com/individuals-families/" target="_blank"><strong>RECENTLY LOST YOUR GROUP HEALTH CARE COVERAGE?</strong><br />
+We can help.</a>
+<br />&nbsp;<br />
+<a href="http://www.highmarkdirect.com/" target="_blank"">Highmark Direct</a><br />
+<a href="https://www.highmarkhealth.org/hmk/index.shtml" target="_blank"">Highmark Health</a></p>
+</div>            		
+</div><!-- end div.row -->
+			
+<div class="row legal">
+<div class="col-md-12">
+<script language="JavaScript" type="text/javascript">
+addLegal();
+</script>
+</div>			
+</div><!-- end div.row -->			
+</div><!-- end container -->
+</div><!-- end footer -->
+
+<!--Coremetrics -->
+<script type="text/javascript" src="//libs.coremetrics.com/eluminate.js"></script> 
+<script type="text/javascript" src="/hmk2/scripts/coremetrics.js"> </script>
+<script type="text/javascript">
+	coremetricsPageLoad();
+</script>
+
+
+<!-- Google Tag Manager -->
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-T8Z2BX"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-T8Z2BX');</script>
+<!-- End Google Tag Manager -->
+
+
+
+
+
+<script src="https://ssl.google-analytics.com/analytics.js" type="text/javascript"></script>
+
+<!-- MotionPoint EasyLink -->
+<!-- <script type="text/javascript" id="mpelid" src="//espanol.highmark.com/mpel/mpel.js"></script> -->
+
+<!-- Bootstrap Accessibility add-on -->
+<script src="/hmk2/scripts/bootstrap-accessibility-modified.js" type="text/javascript"></script>
+
+<!--Retina.js Image Swap -->
+<script type="text/javascript" src="/hmk2/scripts/retina.js"></script> 
+
+<!--Load scripts -->
+<script type="text/javascript">
+	doBaseScripts();
+</script>
+
+</body>
+</html>

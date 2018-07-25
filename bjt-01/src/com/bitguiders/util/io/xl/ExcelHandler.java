@@ -18,7 +18,6 @@ import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.ss.util.CellRangeAddress;
 
-import com.bankofamerica.risk.fc.coverage.util.ApplicationUtil;
 
 /**
  * @author Abdul Kareem

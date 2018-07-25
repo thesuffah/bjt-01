@@ -1,0 +1,15 @@
+<?xml version="1.0" ?>
+<devices>
+    <device>
+        <name>iPhone2</name>
+        <model>6s</model>
+    </device>
+    <device>
+        <name brand="hp">HP Pavilion</name>
+        <model>7</model>
+    </device>
+    <device>
+        <name>iPad2</name>
+        <model>2</model>
+    </device>
+</devices>

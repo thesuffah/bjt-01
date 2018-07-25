@@ -1,0 +1,19 @@
+<?xml version="1.0" ?>
+<devices>
+    <device>
+        <name brand="apple">iPhone2</name>
+        <model>6s</model>
+    </device>
+    <device>
+        <name brand="apple">iPhone2</name>
+        <model>7</model>
+    </device>
+    <device>
+        <name brand="apple">iPad2</name>
+        <model>2</model>
+    </device>
+    <device>
+        <name brand="IBM lenovo">ThinkPad</name>
+        <model>2</model>
+    </device>
+</devices>
