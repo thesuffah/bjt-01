@@ -1,11 +1,9 @@
 package com.bitguiders.bjt_01._collection;
 
-import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Hashtable;
 import java.util.LinkedList;
-import java.util.List;
 import java.util.Queue;
 import java.util.Stack;
 import java.util.TreeMap;
@@ -90,22 +88,6 @@ public class DataStructures {
 		}
 	}
 	
-	public static void synchronizedList(){
-		System.out.println("\nSynchronized List\nvalues");
-		List<String> list = new ArrayList<String>();
-		list.add("a");
-		list.add("a");
-		list.add("b");
-		//map.add(null);
-		list.add("c");
-		//map.add(null);
-		
-		//List<String> list2 =  (List) Collections.synchronizedCollection(list);
-		for(String key:list){
-			System.out.println(key);
-		}
-	}
-	
 	//FIFO: First in first out
 	public static void queue(){
 		Queue<String> q = new LinkedList<>();
@@ -123,6 +105,7 @@ public class DataStructures {
 		s.push("Wajid");
 		System.out.println(s.pop());
 	}
+
 	public static void main(String arg[]){
 		//synchronizedList();
 		
@@ -133,7 +116,8 @@ public class DataStructures {
 		//treeSet();
 		//hashSet();
 		
-		queue();
-		//stack();
+		//queue();
+		stack();
+		
 	}
 }
