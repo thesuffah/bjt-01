@@ -1,16 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Configuration status="WARN">
     <Appenders>
+        <!-- Print to Console -->
         <Console name="console" target="SYSTEM_OUT">
             <PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"/>
         </Console>
+        <!-- Print to File -->
+        <RollingFile name="bjt-01LogAppender" fileName="logs/bjt-01.log" filePattern="logs/bjt-01-%i-%d{MM-dd-yyyy}.log" append="true">
+          <PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"/>
+          <Policies>
+          	<SizeBasedTriggeringPolicy size="1 KB"/>
+          	<TimeBasedTriggeringPolicy/>
+          </Policies>
+        </RollingFile>
+
+        <!-- Print to File -->
+        <RollingFile name="java7LogAppender" fileName="logs/java7.log" filePattern="logs/java7-%i-%d{MM-dd-yyyy}.log" append="true">
+          <PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"/>
+          <Policies>
+          	<SizeBasedTriggeringPolicy size="1 KB"/>
+          	<TimeBasedTriggeringPolicy/>
+          </Policies>
+        </RollingFile>
+        
+        <Async name="async">
+           <AppendRef ref="console"/>
+           <AppendRef ref="bjt-01LogAppender"/>
+           <AppendRef ref="java7LogAppender"/>
+        </Async>
     </Appenders>
     <Loggers>
-        <Logger name="com.bitguiders.bjt_01" level="all" additivity="false">
-            <AppenderRef ref="console"/>
-        </Logger>
         <Root level="all">
-            <AppenderRef ref="console"/>
+            <AppenderRef ref="async"/>
         </Root>
-    </Loggers>
+ 
+        <Logger name="com.bitguiders.bjt_01" level="all" additivity="false">
+            <AppenderRef ref="bjt-01LogAppender"/>
+        </Logger>
+        
+        <Logger name="com.bitguiders.java7" level="all" additivity="false">
+            <AppenderRef ref="java7LogAppender"/>
+        </Logger>
+     </Loggers>
 </Configuration>

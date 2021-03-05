@@ -12,7 +12,7 @@ public class Main extends Static {
 		LOGGER.info("...");
 		User user = new User("Abdul","Kareem");
 		LOGGER.info(user.toString());
-		LOGGER.info(128>>4);;
+		LOGGER.info(128>>4);
 		
 		int[] oldArray = { 3, 5, 7, 9};
 		int[] newArray = { 2, 4, 6, 8, 9, 7, 5, 3};
