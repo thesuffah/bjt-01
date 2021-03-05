@@ -18,15 +18,13 @@
         <RollingFile name="java7LogAppender" fileName="logs/java7.log" filePattern="logs/java7-%i-%d{MM-dd-yyyy}.log" append="true">
           <PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"/>
           <Policies>
-          	<SizeBasedTriggeringPolicy size="1 KB"/>
+          	<SizeBasedTriggeringPolicy size="1 MB"/>
           	<TimeBasedTriggeringPolicy/>
           </Policies>
         </RollingFile>
         
         <Async name="async">
-           <AppendRef ref="console"/>
-           <AppendRef ref="bjt-01LogAppender"/>
-           <AppendRef ref="java7LogAppender"/>
+           <AppenderRef ref="console"/>
         </Async>
     </Appenders>
     <Loggers>
@@ -35,6 +33,7 @@
         </Root>
  
         <Logger name="com.bitguiders.bjt_01" level="all" additivity="false">
+            <AppenderRef ref="console"/>
             <AppenderRef ref="bjt-01LogAppender"/>
         </Logger>
         

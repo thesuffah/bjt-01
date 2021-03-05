@@ -15,7 +15,12 @@ public class SwitchStatement_ {
 			break;
 		case "two":
 			LOGGER.info("You fond 2");
-			break;
+			//break; all below casses will execute
+		case "three":
+			LOGGER.info("You fond 3");
+			//break;
+		default:
+			LOGGER.info("default");
 		}
 	}
 
