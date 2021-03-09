@@ -1,4 +1,4 @@
-package com.bitguiders.design_patterns.proxy_pattern;
+package com.bitguiders.design_patterns.structural.proxy_pattern;
 
 public class ProxyPatternDemo {
 	public static void main(String[] args) {
