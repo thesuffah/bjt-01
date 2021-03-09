@@ -1,4 +1,4 @@
-package com.bitguiders.design_patterns;
+package com.bitguiders.design_patterns.creational;
 
 /*
  *  Singelton examples from java
