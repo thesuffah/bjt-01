@@ -1,5 +1,7 @@
 package com.bitguiders.bjt_01._collection;
 
+import java.lang.reflect.Field;
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Hashtable;
@@ -105,8 +107,25 @@ public class DataStructures {
 		s.push("Wajid");
 		System.out.println(s.pop());
 	}
-
-	public static void main(String arg[]){
+	public static void arrayList() throws Exception {
+		ArrayList<Integer> list = new ArrayList<>(2);
+		System.out.println("@Before size:"+list.size()+", capacity:"+findCapacity(list));
+		list.add(1);
+		list.add(2);
+		System.out.println("@After add size:"+list.size()+", capacity:"+findCapacity(list));
+		
+		list.ensureCapacity(3);
+		System.out.println("@After ensure size:"+list.size()+", capacity:"+findCapacity(list));
+		list.trimToSize();
+		System.out.println("@After trim size:"+list.size()+", capacity:"+findCapacity(list));
+		
+	}
+	public static int findCapacity(ArrayList<Integer> list) throws Exception {
+		Field field = ArrayList.class.getDeclaredField("elementData");
+		field.setAccessible(true);
+		return ((Object[]) field.get(list)).length;
+	}
+	public static void main(String arg[]) throws Exception{
 		//synchronizedList();
 		
 		//hashtable();
@@ -117,7 +136,8 @@ public class DataStructures {
 		//hashSet();
 		
 		//queue();
-		stack();
+		//stack();
+		arrayList();
 		
 	}
 }
