@@ -55,7 +55,7 @@ public static int programmerStrings(String s){
 	}
 	public static void main(String[] args) {
 		
-		String[] str ={"abdul","a-bdul","l-bd-ua"};//{"programmerprogrammer","xprogxrmaxemrppprmmograeiruu","progxrammerrxproxgrammer"};
+		String[] str ={"abdul","a-bdul","l-bd-ua","badl"};//{"programmerprogrammer","xprogxrmaxemrppprmmograeiruu","progxrammerrxproxgrammer"};
 		for(String s:str){
 		System.out.println(s+" = "+containsWord("abdul",s));
 		}
