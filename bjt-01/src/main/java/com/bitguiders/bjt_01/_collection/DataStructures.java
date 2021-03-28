@@ -11,9 +11,14 @@ import java.util.Stack;
 import java.util.TreeMap;
 import java.util.TreeSet;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
+import com.bitguiders.bjt_01.Main;
+
 
 public class DataStructures {
-	
+	private static final Logger LOGGER = LogManager.getLogger(Main.class);
 	//neither null key, nor null values allowed, also its synchronized
 	public static void hashtable(){
 		System.out.println("\nHashtable\nkey,value");
@@ -125,6 +130,13 @@ public class DataStructures {
 		field.setAccessible(true);
 		return ((Object[]) field.get(list)).length;
 	}
+	public static void copyarray() {
+		int[] oldArray = { -1, -2, 3};
+		int[] newArray = { 4, 5, 6,7};
+		LOGGER.info("@Before copy oldArray:{} , newArray:{}",oldArray,newArray);
+		System.arraycopy(oldArray, 0, newArray, 1, oldArray.length-1);
+		LOGGER.info("@After copy oldArray:{} , newArray:{}",oldArray,newArray);
+	}
 	public static void main(String arg[]) throws Exception{
 		//synchronizedList();
 		
@@ -137,7 +149,7 @@ public class DataStructures {
 		
 		//queue();
 		//stack();
-		arrayList();
-		
+		//arrayList();
+		copyarray();
 	}
 }
